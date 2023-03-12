@@ -1,0 +1,24 @@
+.containerr {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 70px 150px 1000px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-sec {
+  display: flex;
+  flex-direction: row;
+}
+.img {
+  margin-top: 5px;
+}
+.price {
+  float: right;
+}
+h3 {
+  font-size: small;
+}

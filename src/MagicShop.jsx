@@ -67,25 +67,30 @@ function MagicShop() {
   };
 
   return (
-    <div>
-      <strong> The Magic Store </strong>
+    <div className="main">
+      <div className="header">
+        <h1>The Magic Store</h1>
 
-      <div>
-        <input
-          type="text"
-          placeholder="Search"
-          value={searchText}
-          onChange={(e) => setSearchText(e.target.value)}
-        />
-        <button onClick={onSearchClick}> Search </button>
+        <div className="srch">
+          <input
+            type="text"
+            placeholder="Search"
+            value={searchText}
+            onChange={(e) => setSearchText(e.target.value)}
+          />
+          <button onClick={onSearchClick}> Search </button>
+        </div>
       </div>
-
-      <div style={{ display: "grid", gridTemplate: "1fr / 1fr 1fr" }}>
-        <SearchResult products={filteredProducts} onAddToCart={onAddToCart} />
-        <ShoppingCart
-          addedProducts={shoppingCartProducts}
-          onRemove={onRemoveFromCart}
-        />
+      <div className="grid">
+        <div className="prod-section">
+          <SearchResult products={filteredProducts} onAddToCart={onAddToCart} />
+        </div>
+        <div className="cart-section">
+          <ShoppingCart
+            addedProducts={shoppingCartProducts}
+            onRemove={onRemoveFromCart}
+          />
+        </div>
       </div>
     </div>
   );

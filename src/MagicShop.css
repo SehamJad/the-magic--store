@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 840px 400px;
+}
+.Strong {
+  font-size: medium;
+}

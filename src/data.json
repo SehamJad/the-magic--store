@@ -15,56 +15,56 @@
       "image": "https://www.charleskeith.com/dw/image/v2/BCWJ_PRD/on/demandware.static/-/Sites-ck-products/default/dw69bb5b62/images/hi-res/2022-L6-CK2-20270913-01-1.jpg?sw=1152&sh=1536"
     },
     {
-      "name": "sport bags",
+      "name": "sportbag",
       "id": 2,
       "price": 1500,
       "description": "gym club Sports bag with blue and black color",
       "image": "https://images.pexels.com/photos/1039518/pexels-photo-1039518.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
-      "name": "family bags",
+      "name": "familybag",
       "id": 3,
       "price": 1500,
       "description": "big suitable bag for family with pink color",
       "image": "https://tamiinbetween.com/wp-content/uploads/2021/01/IMG_5058-768x1024.jpg"
     },
     {
-      "name": "school bags",
+      "name": "schoolbag",
       "id": 4,
       "price": 1000,
       "description": "medium suitable bag for classes and school with blue color",
       "image": "https://images.pexels.com/photos/3731256/pexels-photo-3731256.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
-      "name": "cross bags",
+      "name": "crossbag",
       "id": 5,
       "price": 1600,
       "description": "smallleather bag with dark blue color",
       "image": "https://images.pexels.com/photos/2557039/pexels-photo-2557039.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
-      "name": "business bags",
+      "name": "businessbag",
       "id": 6,
       "price": 3000,
       "description": " leather bag with darkbrown color and black belt",
       "image": "https://images.pexels.com/photos/1214212/pexels-photo-1214212.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
-      "name": "travel bags",
+      "name": "travelbag",
       "id": 7,
       "price": 4000,
       "description": "big travel leather bag withred hjul",
       "image": "https://images.pexels.com/photos/1936848/pexels-photo-1936848.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
-      "name": "evenings bags",
+      "name": "eveningsbag",
       "id": 8,
       "price": 4000,
       "description": "blackleather bag wit gold belt",
       "image": "https://images.pexels.com/photos/934673/pexels-photo-934673.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
-      "name": "laptop bags",
+      "name": "laptopbag",
       "id": 9,
       "price": 1000,
       "description": " good quielty leather bag wit gold belt",
