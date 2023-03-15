@@ -1,23 +1,38 @@
 .containerr {
-  display: grid;
+  display: flex;
+  justify-content: flex-start;
   width: 100%;
-  grid-template-columns: 70px 150px 1000px;
+  gap: 50px;
+  background-color: #e5e4e2;
+  border-radius: 20px;
+  margin: 7px;
 }
-
 .info {
   display: flex;
   flex-direction: column;
 }
-
-.left-sec {
-  display: flex;
-  flex-direction: row;
+.info button {
+  border: none;
 }
+
 .img {
   margin-top: 5px;
 }
+.img img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin-left: 10px;
+}
 .price {
-  float: right;
+  margin-left: 250px;
+  width: 200px;
+}
+.price button {
+  border-radius: 10px;
+  border: none;
+  background-color: #bcc6cc;
+  padding: 10px;
 }
 h3 {
   font-size: small;

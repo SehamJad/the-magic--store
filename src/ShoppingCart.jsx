@@ -1,4 +1,5 @@
 import data from "./data.json";
+import "./ShoppingCart.css";
 
 const allProducts = data.allProducts; // defining allProducts to referencing below .
 
@@ -15,44 +16,42 @@ function ShoppingCart(props) {
     totPrice += product.price * count;
   }
   return (
-    <div>
+    <>
       <h2> Shopping Cart </h2>
+      <div className="shoppingCartContainer">
+        {props.addedProducts
+          .filter((addedProd) => addedProd.count > 0)
+          .map((addedProd) => {
+            return (
+              <div className="imgage">
+                <img
+                  width={"100px"}
+                  height={"100px"}
+                  src={
+                    allProducts.find((p) => addedProd.productId === p.id).image
+                  }
+                  alt="product_image"
+                />
 
-      {props.addedProducts
-        .filter((addedProd) => addedProd.count > 0)
-        .map((addedProd) => {
-          return (
-            <div
-              // key={addedProd.productId}
-              style={{ border: "1px solid white", margin: "1em" }}
-            >
-              <img
-                width={"100px"}
-                height={"100px"}
-                src={
-                  allProducts.find((p) => addedProd.productId === p.id).image
-                }
-                alt="product_image"
-              />
-
-              <div>{addedProd.productname}</div>
-              <div>
-                <label> Count : </label>
-                {addedProd.count}
+                <div>{addedProd.productname}</div>
+                <div>
+                  <label> Count : </label>
+                  {addedProd.count}
+                </div>
+                <div>
+                  {
+                    <button onClick={() => props.onRemove(addedProd.productId)}>
+                      <i className="fa fa-trash"></i>
+                    </button>
+                  }
+                </div>
               </div>
-              <div>
-                {
-                  <button onClick={() => props.onRemove(addedProd.productId)}>
-                    <i className="fa fa-trash"></i>
-                  </button>
-                }
-              </div>
-            </div>
-          );
-        })}
+            );
+          })}
 
-      <h2>Total Price : {totPrice} SEK</h2>
-    </div>
+        <h2>Total Price : {totPrice} SEK</h2>
+      </div>
+    </>
   );
 }
 export default ShoppingCart;

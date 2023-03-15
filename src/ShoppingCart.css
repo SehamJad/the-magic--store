@@ -1,0 +1,21 @@
+.shoppingCartContainer .imgage {
+  border: 1px solid white;
+  margin: 1em;
+  padding: 10px;
+  background-color: lightgray;
+}
+.imgage img {
+  border-radius: 50%;
+}
+.shoppingCartContainer {
+  padding: 20px 0;
+  background-color: #e5e4e2;
+  margin: 20px;
+  border-radius: 20px;
+}
+h2 {
+  background-color: #dadbdd;
+  width: 200px;
+  margin-left: 40px;
+  border-radius: 20px;
+}

@@ -74,7 +74,7 @@ function MagicShop() {
         <div className="srch">
           <input
             type="text"
-            placeholder="Search"
+            placeholder="Search.."
             value={searchText}
             onChange={(e) => setSearchText(e.target.value)}
           />

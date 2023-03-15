@@ -1,8 +1,9 @@
-button {
+.star-rating button {
   background-color: transparent;
   border: none;
   outline: none;
   cursor: pointer;
+  border: none;
 }
 .on {
   color: #000;

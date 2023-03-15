@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Vote.css";
 const StarVoting = () => {
   const [rating, setRating] = useState(0);
   const [hover, setHover] = useState(0);
