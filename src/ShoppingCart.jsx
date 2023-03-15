@@ -7,8 +7,8 @@ console.log({ allProducts });
 
 function ShoppingCart(props) {
   console.log("ShoppingCart props", props);
-  let totPrice = 0;
-
+  let totPrice = 0; //initial value
+  //loop in all the added products
   for (let i = 0; i < props.addedProducts.length; ++i) {
     const count = props.addedProducts[i].count;
     const prodId = props.addedProducts[i].productId;

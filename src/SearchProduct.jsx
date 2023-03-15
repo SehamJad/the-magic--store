@@ -4,7 +4,7 @@ import StarVoting from "./Vote.jsx";
 import "./SearchProduct.css";
 
 function SearchProduct(props) {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(false); // the insital state for the modal is false -un show
   console.log("SearchProduct props: ", props);
   return (
     <div className="containerr">

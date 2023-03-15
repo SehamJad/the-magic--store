@@ -15,7 +15,6 @@ function SearchResult(props) {
       <div style={{ display: "flex", flexDirection: "column" }}>
         {props.products.map((product) => (
           <SearchProduct
-            // key={product.id}
             product={product}
             onAddToCart={() => props.onAddToCart(product.id)}
           />

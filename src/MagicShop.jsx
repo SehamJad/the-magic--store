@@ -17,7 +17,7 @@ function MagicShop() {
     })
   );
 
-  // create function
+  // create function to only return data that looks like a given searched term.
   const filterProductsBySearchWord = () => {
     if (searchText === "") {
       // if nothing is written in the search field, show everything.
@@ -27,7 +27,7 @@ function MagicShop() {
     // serach in the name eller in the description
     const newFilteredProducts = allProducts.filter(
       (product) =>
-        product.name.toLowerCase().includes(searchText) ||
+        product.name.toLowerCase().includes(searchText) || //JavaScript's string method
         product.description.toLowerCase().includes(searchText)
     );
     setFilteredProducts(newFilteredProducts); // update the state
@@ -44,16 +44,15 @@ function MagicShop() {
       }
     }
   };
-
+  //create function to remove product from the shopping cart
   const onRemoveFromCart = (id) => {
     const newShoppingCartProducts = [...shoppingCartProducts];
     for (let i = 0; i < newShoppingCartProducts.length; ++i) {
       if (newShoppingCartProducts[i].productId === id) {
         if (newShoppingCartProducts[i].count > 0) {
-          newShoppingCartProducts[i].count -= 1;
-          // newShoppingCartProducts[i].count = 0;  // if you want all to be removed
+          newShoppingCartProducts[i].count -= 1; // to remove a product
 
-          setShoppingCartProducts(newShoppingCartProducts);
+          setShoppingCartProducts(newShoppingCartProducts); // update the state
         }
 
         return;
