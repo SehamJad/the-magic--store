@@ -12,3 +12,21 @@
 .Strong {
   font-size: medium;
 }
+.srch input {
+  width: 700px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: grey;
+  color: black;
+}
+.srch input::placeholder {
+  color: black;
+}
+.srch button {
+  border: none;
+  height: 30px;
+  width: 80px;
+  background-color: black;
+  border-radius: 10px;
+}

@@ -35,10 +35,7 @@ function ShoppingCart(props) {
                 alt="product_image"
               />
 
-              <div>
-                <label> Product Id: </label>
-                {addedProd.productId}
-              </div>
+              <div>{addedProd.productname}</div>
               <div>
                 <label> Count : </label>
                 {addedProd.count}
@@ -46,7 +43,7 @@ function ShoppingCart(props) {
               <div>
                 {
                   <button onClick={() => props.onRemove(addedProd.productId)}>
-                    Remove
+                    <i className="fa fa-trash"></i>
                   </button>
                 }
               </div>

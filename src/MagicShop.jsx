@@ -1,8 +1,8 @@
-import "./MagicShop.css";
 import React, { useState } from "react";
 import SearchResult from "./SearchResult";
 import data from "./data.json";
 import ShoppingCart from "./ShoppingCart";
+import "./MagicShop.css";
 
 function MagicShop() {
   const allProducts = data.allProducts; // save the j-son data in constant

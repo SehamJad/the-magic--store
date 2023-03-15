@@ -1,5 +1,6 @@
 import Modal from "./Modal.js";
 import { React, useState } from "react";
+import StarVoting from "./Vote.jsx";
 import "./SearchProduct.css";
 
 function SearchProduct(props) {
@@ -24,6 +25,9 @@ function SearchProduct(props) {
           <Modal show={show} onClose={() => setShow(false)}>
             <h3>{props.product.description} </h3>
           </Modal>
+        </div>
+        <div className="star">
+          <StarVoting />
         </div>
       </div>
 
